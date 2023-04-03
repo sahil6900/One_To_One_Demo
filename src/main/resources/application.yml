@@ -1,0 +1,37 @@
+server:
+  port: 7777
+
+spring:
+#  profiles:
+#    active: dev
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    properties:
+#      hibernate:
+#        show_sql: true
+#        format_sql: true
+#        dialect: org.hibernate.dialect.MySQL8Dialect
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/dbtest1
+    username: root
+    password: 112296root
+#
+#logging:
+#  pattern:
+#    console:%d{yyyy-MM-dd HH:mm:ss} [%-5level] %[t] %logger{36}-%msg%n
+#    file:%d{HH:mm:ss} [%-5level] %c{1.} [%t] %logger{36}-%msg%n
+#  level:
+#    com.demo.spring_jpa_understanding_with_mappings : trace
+#    com.demo.spring_jpa_understanding_with_mappings.controller : debug
+#    org.springframework : error
+#    web: trace
+#  file:
+#    path: /Users/sahil/Desktop/app.log
+
+
+
